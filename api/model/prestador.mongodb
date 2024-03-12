@@ -1,0 +1,25 @@
+use('FatecVotorantim');
+
+prestador = {
+    "cnpj": '97032237000150',
+    "razao_social": "SERVIÇOS MOTOBOY LTDA. 2",
+    "cep": "13310160",
+    "endereco": {
+        "logradouro": "Av Presidente Keneddy, 321",
+        "complemento": "",
+        "bairro": "Centro",
+        "localidade": "Votorantim",
+        "uf": "sp"
+    },
+    "cnae_fiscal": 451510,
+    "nome_fantasia": "ZÉ MOTOBOY",
+    "data_inicio_atividade": "2022-07-22",
+    "localizacao": {
+        "type": "point",
+        "coordinates": [-23.2904, -47.2963]
+    }
+}
+
+db.prestadores.insertOne(prestador); 
+
+db.prestadores.find();
